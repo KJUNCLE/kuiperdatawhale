@@ -25,6 +25,7 @@
 #define KUIPER_INFER_SOURCE_LAYER_MAX_POOLING_
 #include "layer/abstract/non_param_layer.hpp"
 namespace kuiper_infer {
+// 定义了一个名称为MaxPoolingLayer的类，继承自NonParamLayer类，实现了MaxPooling层的前向计算。
 class MaxPoolingLayer : public NonParamLayer {
  public:
   explicit MaxPoolingLayer(uint32_t padding_h, uint32_t padding_w,
