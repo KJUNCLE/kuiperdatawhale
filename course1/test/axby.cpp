@@ -33,6 +33,7 @@ TEST(test_arma, Axby) {
 }
 
 void EPowerMinus(const arma::fmat &x, arma::fmat &y) {
+  y = arma::exp(-x);
   // 把代码写这里 完成y = e^{-x}的运算
 }
 
@@ -53,6 +54,7 @@ TEST(test_arma, e_power_minus) {
 
 void Axpy(const arma::fmat &x, arma::fmat &Y, float a, float y) {
   // 编写Y = a * x + y
+  Y = a * x + y;
 }
 
 TEST(test_arma, axpy) {
